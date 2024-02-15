@@ -13,4 +13,4 @@ services:
       - ./config:/etc/bind
       - ./cache:/var/cache/bind
       - ./records:/var/lib/bind
-    restart: always
+    restart: unless-stopped
