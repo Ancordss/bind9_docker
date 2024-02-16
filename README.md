@@ -25,6 +25,11 @@ Clone this repository
 ## Usage
 
 run the following command
+
+```bash
+make createNW
+```
+
 ```bash
 make build
 ```
