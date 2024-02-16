@@ -1,20 +1,20 @@
 options {
 
     directory "/var/cache/bind";
-
-
-
     recursion yes;
-
     listen-on { any; };
 
+    // Restrict queries to specific IPs
+    allow-query { localhost; 192.0.2.0/24; 203.0.113.0/24; 172.24.0.0/16; };
 
+    // Use the latest DNSSEC settings
+    dnssec-validation auto;
 
     forwarders {
 
-            8.8.8.8;
+            1.1.1.1;
 
-            4.4.4.4;
+            1.0.0.1;
 
     };
 

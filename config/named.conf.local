@@ -1,7 +1,10 @@
-zone "instar-net.io" {
+// This section defines a zone for the domain "so2umg.xyz".
+// The zone is configured as a master, meaning it is the authoritative source for the domain's DNS records.
+// The DNS records for this zone are stored in the file "/etc/bind/zones/db.so2umg.xyz".
+zone "so2umg.xyz" {
 
     type master;
 
-    file "/etc/bind/zones/db.instar-net.io";
+    file "/etc/bind/zones/db.so2umg.xyz";
 
 };

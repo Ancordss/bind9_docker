@@ -1,3 +1,7 @@
+# This Dockerfile builds a custom BIND9 DNS server image.
+# It installs the necessary packages, copies the configuration files,
+# and exposes the required ports. The DNS server is started using the
+# specified command.
 FROM internetsystemsconsortium/bind9:9.18
 
 
@@ -18,7 +22,7 @@ COPY config/named.conf.options /etc/bind/
 
 COPY config/named.conf.local /etc/bind/
 
-COPY config/db.instar-net.io /etc/bind/zones/
+COPY records/db.so2umg.xyz /etc/bind/zones/
 
 
 

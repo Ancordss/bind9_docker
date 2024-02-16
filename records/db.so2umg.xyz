@@ -1,6 +1,6 @@
 $TTL    1d ; default expiration time (in seconds) of all RRs without their own TTL value
 
-@       IN      SOA     ns1.instar-net.io. root.instar-net.io. (
+@       IN      SOA     ns1.so2umg.xyz. root.so2umg.xyz. (
 
                   3      ; Serial
 
@@ -16,16 +16,18 @@ $TTL    1d ; default expiration time (in seconds) of all RRs without their own T
 
 ; name servers - NS records
 
-     IN      NS      ns1.instar-net.io.
+     IN      NS      ns1.so2umg.xyz.
 
 
 
 ; name servers - A records
 
-ns1.instar-net.io.             IN      A      172.24.0.2
+ns1.so2umg.xyz.             IN      A      172.24.0.2
 
 
 
-service1.instar-net.io.        IN      A      172.24.0.3
+service1.so2umg.xyz.        IN      A      172.24.0.3
 
-service2.instar-net.io.        IN      A      172.24.0.4
+service2.so2umg.xyz.        IN      A      172.24.0.4
+
+api1.so2umg.xyz.            IN      A      172.24.0.5
