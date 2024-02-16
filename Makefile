@@ -32,15 +32,19 @@ inspect_network:
 
 #triying ping to service2 with a custom dns 
 test1:
+	echo "triying to service2 with a custom dns"
 	docker exec -it service1 nslookup service2.so2umg.xyz
 
 test2:
+	echo "triying to resolve google.com with the custom dns"
 	docker exec -it service1 nslookup google.com 
 
 test3:
+	echo "triying to resolve api1.so2umg.xyz with the custom dns"
 	docker exec -it service1 nslookup api1.so2umg.xyz
 
 test4:
+	echo "triying to get the response from api1.so2umg.xyz with the custom dns"
 	docker exec -it service1 curl api1.so2umg.xyz:5000
 
 stop:
